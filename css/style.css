@@ -1161,13 +1161,19 @@ text-shadow: none;
   background-image: -moz-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
   background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
   background-image: -ms-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+	position: absolute; /* postulat de départ */
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
 .skillbar {
-  position: relative;
+  
   display: block;
   width: 100%;
   margin-bottom: 30px;
+	 position: absolute; /* postulat de départ */
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
 .skillbar .skillwrap {
